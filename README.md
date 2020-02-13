@@ -1,6 +1,6 @@
 # Docker implementation of SMS-based Queue Manager
 
-This repo builds upon the code found [here](https://github.com/nexmo-community/sms-queue-notify), providing a Dockerfile to easily deploy a basic Python queue-manager application. You can read the [full blog post](https://www.nexmo.com/blog/2020/02/07/dockerize-python-queue-manager-project-for-easy-deployment-dr] for details about how the Dockerfile is put together.
+This repo builds upon the code found [here](https://github.com/nexmo-community/sms-queue-notify), providing a Dockerfile to easily deploy a basic Python queue-manager application. You can read the [full blog post](https://www.nexmo.com/blog/2020/02/07/dockerize-python-queue-manager-project-for-easy-deployment-dr) for details about how the Dockerfile is put together.
 
 ## Getting started
 
