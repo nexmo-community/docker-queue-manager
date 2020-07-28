@@ -22,7 +22,7 @@ docker build --tag queue-app .
 If you'd like to run locally, you'll first need to prepare a few environment variables. First, rename the `.env_sample` file to `.env`, then populate with your Nexmo information. Then, enter the following in your terminal:
 
 ```
-docker run -d -p 5000:5000 --env-file .env -e PORT=5000 -e DATABASE_URL=sqlite:///queue.db queue_app
+docker run -d -p 5000:5000 --env-file .env -e PORT=5000 -e DATABASE_URL=sqlite:///queue.db -e PYTHONUNBUFFERED=0 queue_app
 ```
 
 The project requires a PORT and DATABASE_URL, which would be provided automatically if deploying to Heroku. For local testing this will be enough to create a SQLite database in the container, but this database will not persist after the container is stopped.
