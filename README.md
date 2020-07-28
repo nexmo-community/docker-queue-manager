@@ -19,7 +19,7 @@ docker build --tag queue-app .
 
 ## Run locally
 
-If you'd like to run locally, you'll first need to prepare a few environment variables. First, rename the `.env_sample` file to `.env`, then populate with your Nexmo information. Set your `DATABASE_URL` equal to `sqlite:///queue.db` (for local testing it is enough to create a SQLite database in the container, but this database will not persist after the container is stopped). Then, enter the following in your terminal:
+If you'd like to run locally, you'll first need to prepare a few environment variables. First, rename the `.env_sample` file to `.env`, then populate with your Nexmo information. The default `DATABASE_URL` is equal to `sqlite:///queue.db`, but you can specify another database if you'd like (for local testing it is enough to create a SQLite database in the container, but this database will not persist after the container is stopped). Then, enter the following in your terminal:
 
 ```
 docker run -d -p 5000:5000 --env-file .env queue_app
