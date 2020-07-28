@@ -44,7 +44,7 @@ def list():
 @app.route('/webhooks/inbound-sms', methods=('GET', 'POST'))
 def inbound_sms():
     if request.is_json:
-        message = request.get(json())
+        message = request.get_json()
     else:
         message = dict(request.form) or dict(request.args)
     num = message['msisdn']
